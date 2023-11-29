@@ -1,3 +1,811 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  margin: auto;
+  width: 90%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header div h1 {
+  font-size: 40px;
+  font-family: cursive;
+}
+
+header div a {
+  margin-left: 40px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  gap: 30px;
+}
+
+header div img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+}
+
+header .icon {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 1200px) {
+  header div h1 {
+    font-size: 35px;
+    font-family: cursive;
+  }
+  header div a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  header div img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+}
+@media (max-width: 1024px) {
+  header div h1 {
+    font-size: 30px;
+    font-family: cursive;
+  }
+  header div a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  header div img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  header .icon i {
+    display: none;
+  }
+}
+@media (max-width: 756px) {
+  header div h1 {
+    font-size: 40px;
+    font-family: cursive;
+  }
+  header div a {
+    display: none;
+  }
+  header .remove i {
+    display: none;
+  }
+  header div img {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  header div h1 {
+    font-size: 30px;
+    font-family: cursive;
+  }
+}
+main {
+  margin-top: 50px;
+  width: 100%;
+  height: 100%;
+}
+
+.head {
+  width: 90%;
+  height: 500px;
+  margin: auto;
+  background-color: rgba(14, 205, 205, 0.142);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.head img {
+  width: 800px;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+}
+
+.head div h3 {
+  font-size: 20px;
+}
+
+.head div h1 {
+  font-size: 50px;
+}
+
+.head div p {
+  font-size: 20px;
+}
+
+.head div {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.head .divi {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+@media (max-width: 1300px) {
+  .head img {
+    width: 600px;
+    height: 500px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-size: cover;
+  }
+}
+@media (max-width: 1200px) {
+  .head {
+    height: 400px;
+  }
+  .head img {
+    width: 500px;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-size: cover;
+  }
+  .head div h3 {
+    font-size: 20px;
+  }
+  .head div h1 {
+    font-size: 40px;
+  }
+  .head div p {
+    font-size: 18px;
+  }
+  .head div {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .head .divi {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+}
+@media (max-width: 1024px) {
+  .head {
+    height: 350px;
+  }
+  .head img {
+    width: 350px;
+    height: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-size: cover;
+  }
+  .head div h3 {
+    font-size: 18px;
+  }
+  .head div h1 {
+    font-size: 35px;
+  }
+  .head div p {
+    font-size: 16px;
+  }
+  .head div {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .head .divi {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+}
+@media (max-width: 756px) {
+  .head {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+  }
+  .head img {
+    width: 100%;
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-size: cover;
+  }
+  .head div h3 {
+    font-size: 18px;
+  }
+  .head div h1 {
+    font-size: 35px;
+  }
+  .head div p {
+    font-size: 16px;
+  }
+  .head div {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+}
+@media (max-width: 480px) {
+  .head {
+    height: 700px;
+  }
+  .head img {
+    width: 100%;
+    height: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-size: cover;
+  }
+  .head div h3 {
+    font-size: 18px;
+  }
+  .head div h1 {
+    font-size: 35px;
+  }
+  .head div p {
+    font-size: 16px;
+  }
+  .head div {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+}
+main h1 {
+  width: 90%;
+  margin: auto;
+  font-size: 40px;
+  padding: 50px 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.foods {
+  margin: auto;
+  width: 90%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.foods img {
+  width: 350px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+}
+
+.foods h3 {
+  margin: 20px 0;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 1260px) {
+  main h1 {
+    width: 90%;
+    margin: auto;
+    font-size: 40px;
+    padding: 50px 0;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  .foods {
+    margin: auto;
+    width: 90%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .foods img {
+    width: 290px;
+    height: 290px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-size: cover;
+  }
+  .foods h3 {
+    margin: 20px 0;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+@media (max-width: 1024px) {
+  main h1 {
+    width: 90%;
+    margin: auto;
+    font-size: 30px;
+    padding: 30px 0;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  .foods {
+    margin: auto;
+    width: 90%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .foods img {
+    width: 200px;
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-size: cover;
+  }
+  .foods h3 {
+    margin: 20px 0;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+@media (max-width: 800px) {
+  main h1 {
+    width: 90%;
+    margin: auto;
+    font-size: 27px;
+    padding: 30px 0;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  .foods {
+    margin: auto;
+    width: 90%;
+    height: 700px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .foods img {
+    width: 300px;
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-size: cover;
+  }
+  .foods h3 {
+    margin: 20px 0;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+@media (max-width: 700px) {
+  main h1 {
+    width: 90%;
+    margin: auto;
+    font-size: 27px;
+    padding: 40px 0;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  .foods img {
+    width: 250px;
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-size: cover;
+  }
+}
+@media (max-width: 576px) {
+  main h1 {
+    width: 80%;
+    margin: auto;
+    font-size: 27px;
+    padding: 40px 0;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  .foods {
+    margin: auto;
+    width: 90%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .foods img {
+    width: 450px;
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-size: cover;
+  }
+  .foods h3 {
+    margin: 20px 0;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+@media (max-width: 480px) {
+  main h1 {
+    width: 80%;
+    margin: auto;
+    font-size: 30px;
+    padding: 50px 0;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  .foods {
+    margin: auto;
+    width: 90%;
+    height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .foods img {
+    width: 100%;
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-size: cover;
+  }
+  .foods h3 {
+    margin: 20px 0;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+.rasm {
+  margin: auto;
+  width: 90%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rasm img {
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+}
+
+.rasm h1 {
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+@media (max-width: 1290px) {
+  .rasm {
+    margin: auto;
+    width: 90%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .rasm img {
+    width: 150px;
+    border-radius: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-size: cover;
+  }
+  .rasm h1 {
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+}
+@media (max-width: 1024px) {
+  .rasm {
+    margin: auto;
+    width: 90%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .rasm img {
+    text-align: center;
+    width: 120px;
+    border-radius: 50%;
+  }
+  .rasm h1 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+}
+@media (max-width: 850px) {
+  .rasm {
+    margin: auto;
+    width: 90%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    text-align: center;
+  }
+  .rasm img {
+    text-align: center;
+    width: 130px;
+    border-radius: 50%;
+  }
+  .rasm h1 {
+    padding: 10px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+}
+@media (max-width: 605px) {
+  .rasm {
+    margin: auto;
+    width: 90%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    text-align: center;
+  }
+  .rasm img {
+    text-align: center;
+    width: 130px;
+    border-radius: 50%;
+  }
+  .rasm h1 {
+    padding: 10px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .rasm {
+    margin: auto;
+    width: 90%;
+    height: 700px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    text-align: center;
+  }
+  .rasm img {
+    text-align: center;
+    width: 150px;
+    border-radius: 50%;
+  }
+  .rasm h1 {
+    padding: 10px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+}
+.footerr {
+  width: 100%;
+  height: 500px;
+  background-color: rgba(233, 150, 122, 0.545);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footerr h1 {
+  font-size: 80px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+p {
+  font-size: 28px;
+  text-align: center;
+}
+
+.footerr div {
+  width: 35%;
+  height: 15%;
+  background-color: white;
+}
+
+.footerr input {
+  width: 75%;
+  height: 100%;
+  border: none;
+  font-size: 20px;
+}
+
+.footerr button {
+  background-color: orangered;
+  color: white;
+  border: none;
+  width: 23%;
+  height: 80%;
+}
+
+@media (max-width: 1200px) {
+  .footerr {
+    width: 100%;
+    height: 500px;
+    background-color: rgba(233, 150, 122, 0.545);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .footerr h1 {
+    font-size: 70px;
+    font-family: "Times New Roman", Times, serif;
+  }
+  p {
+    font-size: 26px;
+    text-align: center;
+  }
+  .footerr div {
+    width: 30%;
+    height: 12%;
+    background-color: white;
+  }
+  .footerr input {
+    width: 75%;
+    height: 100%;
+    border: none;
+    font-size: 20px;
+  }
+  .footerr button {
+    background-color: orangered;
+    color: white;
+    border: none;
+    width: 23%;
+    height: 80%;
+  }
+}
+@media (max-width: 1024px) {
+  .footerrr {
+    width: 100%;
+    height: 400px;
+    background-color: rgba(233, 150, 122, 0.545);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .footerr h1 {
+    font-size: 60px;
+    font-family: "Times New Roman", Times, serif;
+  }
+  p {
+    font-size: 22px;
+    text-align: center;
+  }
+  .footerr div {
+    width: 27%;
+    height: 10%;
+    background-color: white;
+  }
+  .footerr input {
+    width: 75%;
+    height: 100%;
+    border: none;
+    font-size: 16px;
+  }
+  .footerr button {
+    background-color: orangered;
+    color: white;
+    border: none;
+    width: 23%;
+    height: 80%;
+  }
+}
+@media (max-width: 756px) {
+  .footerr {
+    width: 100%;
+    height: 400px;
+    background-color: rgba(233, 150, 122, 0.545);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .footerr h1 {
+    font-size: 50px;
+    font-family: "Times New Roman", Times, serif;
+  }
+  p {
+    font-size: 20px;
+    text-align: center;
+  }
+  .footerr div {
+    width: 25%;
+    height: 10%;
+    background-color: white;
+  }
+  .footerr input {
+    width: 75%;
+    height: 100%;
+    border: none;
+    font-size: 13px;
+  }
+  .footerr button {
+    background-color: orangered;
+    color: white;
+    border: none;
+    width: 20%;
+    height: 70%;
+  }
+}
+@media (max-width: 556px) {
+  .footerr {
+    width: 100%;
+    height: 400px;
+    background-color: rgba(233, 150, 122, 0.545);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .footerr h1 {
+    font-size: 40px;
+    font-family: "Times New Roman", Times, serif;
+  }
+  p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .footerr div {
+    width: 25%;
+    height: 8%;
+    background-color: white;
+  }
+  .footerr input {
+    width: 75%;
+    height: 100%;
+    border: none;
+    font-size: 12px;
+  }
+  .footerr button {
+    background-color: orangered;
+    color: white;
+    border: none;
+    width: 20%;
+    height: 70%;
+  }
+}
 .asil_asilbek {
   margin-left: 182px;
 }
